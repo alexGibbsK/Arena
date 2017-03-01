@@ -4,8 +4,11 @@ package com.company;
  * Created by java-1-07 on 01.03.2017.
  */
 public class Fighter {
+    //Сила
     int str;
+    //Ловкость
     double dex;
+    //Восприятие
     double per;
     int hp = 100;
     int id;
