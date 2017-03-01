@@ -7,9 +7,9 @@ public class Fighter {
     //Сила
     int str;
     //Ловкость
-    double dex;
+    int dex;
     //Восприятие
-    double per;
+    int per;
     int hp = 100;
     int id;
 
@@ -38,11 +38,11 @@ public class Fighter {
         return str;
     }
 
-    public double getDex() {
+    public int getDex() {
         return dex;
     }
 
-    public double getPer() {
+    public int getPer() {
         return per;
     }
 

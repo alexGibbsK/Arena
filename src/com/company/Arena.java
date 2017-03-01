@@ -62,12 +62,12 @@ public class Arena {
     public void f1Hit() {
         this.damage = r.nextInt(f1.getStr()) + 1;
         //Реализация крита;
-        if (r.nextDouble() < (double) (f1.getPer() / 100)) {
+        if (r.nextDouble() < ((double) f1.getPer() / 100)) {
             this.f2.hp -= (this.damage * 2);
             System.out.println((char) 27 + "[31mCRIT F1 hit F2 for: " + this.damage * 2 + " HP" + (char) 27 + "[0m");
         }
         //Реализация уворота
-        else if (r.nextDouble() < (double) (f2.getDex() / 100)) {
+        else if (r.nextDouble() < ((double) f2.getDex() / 100)) {
             this.f2.hp -= (this.damage * 0.2);
             System.out.println((char) 27 + "[31mDODGE F1 hit F2 for: " + (int)(this.damage * 0.5) + " HP" + (char) 27 + "[0m");
         }
@@ -83,12 +83,12 @@ public class Arena {
     public void f2Hit() {
         this.damage = r.nextInt(f2.getStr()) + 1;
         //Реализация крита;
-        if (r.nextDouble() < (double) (f2.getPer() / 100)) {
+        if (r.nextDouble() < ((double) f2.getPer() / 100)) {
             this.f1.hp -= (this.damage * 2);
             System.out.println((char) 27 + "[31mCRIT F2 hit F1 for: " + this.damage * 2 + " HP" + (char) 27 + "[0m");
         }
         //Реализация уворота с нанесением 20% DMG
-        else if (r.nextDouble() < (double) (f1.getDex() / 100)) {
+        else if (r.nextDouble() < ((double) f1.getDex() / 100)) {
             this.f1.hp -= (this.damage * 0.2);
             System.out.println((char) 27 + "[31mDODGE F2 hit F1 for: " + (int)(this.damage * 0.5) + " HP" + (char) 27 + "[0m");
         }//Реализация обычного удара
