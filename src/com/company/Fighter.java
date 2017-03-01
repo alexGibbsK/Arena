@@ -5,8 +5,8 @@ package com.company;
  */
 public class Fighter {
     int str;
-    int dex;
-    int per;
+    double dex;
+    double per;
     int hp = 100;
     int id;
 
@@ -35,11 +35,11 @@ public class Fighter {
         return str;
     }
 
-    public int getDex() {
+    public double getDex() {
         return dex;
     }
 
-    public int getPer() {
+    public double getPer() {
         return per;
     }
 
