@@ -69,7 +69,7 @@ public class Arena {
         //Реализация уворота
         else if (r.nextDouble() < ((double) f2.getDex() / 100)) {
             this.f2.hp -= (this.damage * 0.2);
-            System.out.println((char) 27 + "[31mDODGE F1 hit F2 for: " + (int)(this.damage * 0.5) + " HP" + (char) 27 + "[0m");
+            System.out.println((char) 27 + "[31mDODGE F1 hit F2 for: " + (int)(this.damage * 0.2) + " HP" + (char) 27 + "[0m");
         }
         //Реализация обычного удара
         else {
@@ -90,7 +90,7 @@ public class Arena {
         //Реализация уворота с нанесением 20% DMG
         else if (r.nextDouble() < ((double) f1.getDex() / 100)) {
             this.f1.hp -= (this.damage * 0.2);
-            System.out.println((char) 27 + "[31mDODGE F2 hit F1 for: " + (int)(this.damage * 0.5) + " HP" + (char) 27 + "[0m");
+            System.out.println((char) 27 + "[31mDODGE F2 hit F1 for: " + (int)(this.damage * 0.2) + " HP" + (char) 27 + "[0m");
         }//Реализация обычного удара
         else {
             this.f1.hp -= this.damage;

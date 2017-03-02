@@ -27,6 +27,7 @@ public class Main {
                 list) {
             System.out.println(f.toString());
         }
+
         System.out.println("\nДа начнется битва\n");
 
         //Остаться должен только один (С) Горец
