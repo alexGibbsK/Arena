@@ -31,7 +31,7 @@ public class Main {
         System.out.println("\nДа начнется битва\n");
 
         //Остаться должен только один (С) Горец
-        while(list.size() > 1){
+        while (list.size() > 1) {
             System.out.println("Fight #" + ++fightNum);
             list.add(new Arena(list.get(0), list.get(1)).fight());
             list.remove(0);
@@ -49,7 +49,7 @@ public class Main {
 
     private static void getFighterList(Random r, List<Fighter> list, int id) {
         for (int i = 0; i < 10; i++) {
-            list.add(new Fighter(r.nextInt(100) + 1,r.nextInt(100) + 1,r.nextInt(100) + 1, id++ ));
+            list.add(new Fighter(r.nextInt(100) + 1, r.nextInt(100) + 1, r.nextInt(100) + 1, id++));
         }
     }
 }
